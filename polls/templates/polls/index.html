@@ -1,0 +1,28 @@
+
+<!--<br>-->
+<!--<hr>-->
+<!--<ul>-->
+<!--{%for q in question%}-->
+    <!--<br>-->
+    <!--<li>-->
+        <!--<a href="/polls/{{q.id}}">-->
+            <!--{{q.id}} /-->
+            <!--{{q.question_text}}-->
+        <!--</a>-->
+    <!--</li>-->
+<!--{%endfor%}-->
+<!--</ul>-->
+
+<br>
+<hr>
+<ul>
+{%for q in question%}
+    <br>
+    <li>
+        <a href="{% url 'detail' q.id %}">
+            {{q.id}} /
+            {{q.question_text}}
+        </a>
+    </li>
+{%endfor%}
+</ul>
